@@ -1,40 +1,103 @@
 <template>
-<div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+  <div>
+    <b-navbar class="navbar" toggleable="lg" type="dark">
+      <b-navbar-brand class="navbar-brand" href="#"
+        ><h5>Cafe Bang Mul</h5>
+      </b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
-
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template #button-content>
-            <em>User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-</div>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="navbar-nav">
+          <b-nav-item class="nav-item" href="#">
+            <ul>
+              <li><a href="#">All</a></li>
+              <li><a href="#">Teh</a></li>
+              <li><a href="#">Kopi</a></li>
+              <li><a href="#">Juice</a></li>
+              <li><a href="#">Snack</a></li>
+            </ul>
+          </b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item  class="nav-admin" href="#"><h6>Hello, Admin</h6></b-nav-item>
+          <b-nav-item class="nav-logout" href="#"><h6>Logout</h6></b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+  </div>
 </template>
+<style>
+.navbar {
+  background-color: #3c366b;
+  padding: 20px 0;
+}
+.navbar-brand h5 {
+  height: 70px;
+  padding: 20px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color:#fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item ul li {
+  display: inline;
+  float: left;
+  padding: 10;
+  border: 1px solid;
+  border-radius: 5px;
+  margin:  10px 15px;
+}
+li a {
+  display: block;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+.nav-item ul li a:hover {
+  color: #38b6bb;
+  background-color: #fff;
+  text-decoration: none;
+}
+.navbar-nav{
+  color: transparent;
+}
+.nav-admin h6{
+  text-align: left;
+    color: #fff;
+  padding: 5px 0;
+    text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.nav-logout h6{
+  color: #38B6BB;
+  text-align: left;
+  padding: 5px 0;
+    font-size: 16x;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+.nav-logout h6:hover{
+    color: #fff;
+
+}
+</style>
