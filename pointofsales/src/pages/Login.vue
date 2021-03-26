@@ -8,7 +8,7 @@
       <input type="text" value="admin" class="input-username" />
       <h5 class="label-input">Password</h5>
       <input type="password" value="admin" class="input-password" />
-      <button>Sign In</button>
+      <button><a href="/home">Sign In</a></button>
     </div>
     <div class="footer-login">
       &copy;2020 Random App. All rights reserved.
