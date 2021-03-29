@@ -1,18 +1,19 @@
 <template>
   <div id="app">
+    <template-frontend></template-frontend>
 
-    <Home />
-  </div>
+    <!-- <Login /> -->
+         </div>
 </template>
 
 <script>
 
-import Home from "./pages/Home";
+import TemplateFrontend from "@/components/TemplateFrontend";
 
 export default {
   name: "App",
   components: {
-    Home,
+    TemplateFrontend,
     // Navbar,
     // Layout,
   },

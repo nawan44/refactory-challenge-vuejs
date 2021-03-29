@@ -9,9 +9,9 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="navbar-nav">
-          <b-nav-item class="nav-item" href="#">
+          <b-nav-item class="nav-item" href="/home">
             <ul>
-              <li><a href="#">All</a></li>
+              <li><a href="/login">All</a></li>
               <li><a href="#">Teh</a></li>
               <li><a href="#">Kopi</a></li>
               <li><a href="#">Juice</a></li>
