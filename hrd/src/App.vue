@@ -1,13 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div id="app">
+    <template-frontend></template-frontend>
+
+    <!-- <Login /> -->
+         </div>
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+import TemplateFrontend from "./components/TemplateFrontend.vue";
+
+export default {
+  name: "App",
+  components: {
+    TemplateFrontend,
+    // Navbar,
+    // Layout,
+  },
+};
 </script>
 
 <style>
@@ -16,7 +26,7 @@ import HelloWorld from './components/HelloWorld.vue'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* color: #2c3e50; */
+  background-color: #2D3748;
 }
 </style>
