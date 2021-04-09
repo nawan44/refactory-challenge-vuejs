@@ -1,23 +1,23 @@
 <template>
   <div class="container">
-Template
+<total-employee></total-employee>
   </div>
 </template>
 <script>
+import TotalEmployee from "./TotalEmployee.vue";
 
 export default {
   name: "TemplateFrontend",
-  // components: {
-  //   BootstrapJumbotron,
-  //   BootstrapNavbar
-  // }
+  components: {
+    TotalEmployee
+  }
 };
 </script>
 
 <style>
 .container {
   width: 100%;
-    background-color: #4A5568;
+    /* background-color: #4A5568; */
 
 }
 </style>
