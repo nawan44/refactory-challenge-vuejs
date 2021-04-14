@@ -24,8 +24,8 @@ export default {
 
 <style>
 .container-employee {
-  width: 80%;
-    background-color: #fff;
+  width: 30%;
+  float: left;   margin-left: 20px;   background-color: #fff;
     border: 1px solid;
     text-align: center;
     margin: 0 auto;
