@@ -2,12 +2,11 @@
   <div class="container-out-today">
     <div class="out-today">Out Today</div>
     <div class="image-employee">
-      <img src="../assets/photo/people1.jpeg" class="photo"/>
-      <img src="../assets/photo/people2.jpeg" class="photo"/>
-      <img src="../assets/photo/people3.jpeg" class="photo"/>
-      <img src="../assets/photo/people4.jpeg" class="photo"/>
-      <img src="../assets/photo/people5.jpeg" class="photo"/>
-
+      <img src="../assets/photo/people1.jpeg" class="photo" />
+      <img src="../assets/photo/people2.jpeg" class="photo" />
+      <img src="../assets/photo/people3.jpeg" class="photo" />
+      <img src="../assets/photo/people4.jpeg" class="photo" />
+      <img src="../assets/photo/people5.jpeg" class="photo" />
     </div>
     <div class="count-image">5 People</div>
   </div>
@@ -19,24 +18,23 @@
 // import people4 from '../assets/photo/people4';
 // import people5 from '../assets/photo/people5';
 
-
-
 export default {
-  name: "TemplateFrontend",
-
+  name: "OutToday",
 };
 </script>
 
 <style>
 .container-out-today {
-  width: 30%;
+  width: 100%;
   float: left;
+  margin-top:20px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: #fff;
   border: 1px solid;
   text-align: center;
   margin: 0 auto;
+  margin-top:20px;
   border-radius: 5px;
 }
 .out-today {
@@ -72,9 +70,8 @@ export default {
   line-height: 24px;
   color: #a0aec0;
 }
-.photo{
+.photo {
   border-radius: 50%;
   width: 35px;
-  
 }
 </style>
