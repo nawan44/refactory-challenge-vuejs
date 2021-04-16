@@ -1,16 +1,19 @@
 <template>
   <div class="container">
+    <Navbar/>
     <total-employee></total-employee>
     <out-today></out-today>
 <todays-present></todays-present>  </div>
 </template>
 <script>
+import Navbar from "./Navbar.vue"
 import TotalEmployee from "./TotalEmployee.vue";
 import OutToday from "./OutToday.vue";
 import TodaysPresent from "./TodaysPresent.vue";
 export default {
   name: "TemplateFrontend",
   components: {
+    Navbar,
     TotalEmployee,
     OutToday,
     TodaysPresent,
