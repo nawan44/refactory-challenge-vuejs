@@ -1,15 +1,19 @@
 <template>
   <div class="container">
-    <Navbar/>
+    <Navbar />
     <total-employee></total-employee>
     <out-today></out-today>
-<todays-present></todays-present>  </div>
+    <todays-present></todays-present>
+    <upcoming-events></upcoming-events>
+  </div>
 </template>
 <script>
-import Navbar from "./Navbar.vue"
+import Navbar from "./Navbar.vue";
 import TotalEmployee from "./TotalEmployee.vue";
 import OutToday from "./OutToday.vue";
 import TodaysPresent from "./TodaysPresent.vue";
+import UpcomingEvents from "./UpcomingEvents.vue";
+
 export default {
   name: "TemplateFrontend",
   components: {
@@ -17,6 +21,7 @@ export default {
     TotalEmployee,
     OutToday,
     TodaysPresent,
+    UpcomingEvents,
   },
 };
 </script>
