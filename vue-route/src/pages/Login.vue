@@ -1,14 +1,27 @@
 <template>
   <div class="background-login">
-    Home
-    <button>
-      <router-link to="/login">Users</router-link>
-    </button>
+    <div class="container-login">
+      <div class="title-login">
+        Cafe Bang Mul
+      </div>
+      <h5 class="label-input">Username</h5>
+      <input type="text" value="admin" class="input-username" />
+      <h5 class="label-input">Password</h5>
+      <input type="password" value="admin" class="input-password" />
+
+      <button class="button">
+        <router-link to="/home" class="router">Users</router-link>
+      </button>
+    </div>
+
+    <div class="footer-login">
+      &copy;2020 Random App. All rights reserved.
+    </div>
   </div>
 </template>
 <script>
 export default {
-  name: "Login",
+  name: "Login"
 };
 </script>
 <style>
@@ -17,12 +30,11 @@ export default {
   margin: 0;
   height: 100vh;
   width: 100%;
-  color: red;
   background-color: #2c3e50;
 }
 .container-login {
   width: 300px;
-  height: 375px;
+  height: 350px;
   text-align: center;
   margin: 0 auto;
   background-color: #fff;
@@ -87,24 +99,27 @@ export default {
   padding: 7px;
   border: 1px solid #4199e1;
 }
-.router {
+.button {
   width: 100px;
-  text-decoration: none;
+  border: none;
   border-radius: 3px !important;
-  border: 0.5px solid #4199e1;
-  margin: 80px 0 30px 0;
+
+  margin: 30px 0 30px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   padding: 10px;
-  color: #000;
+  color: #fff !important;
   background-color: #4199e1;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-button a:hover {
+.router {
+  text-decoration: none;
+}
+button:hover {
   color: #fff;
   background-color: #2c6cb0;
 }

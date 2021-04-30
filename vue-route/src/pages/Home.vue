@@ -1,5 +1,6 @@
 <template>
   <div class="background-login">
+    <navbar></navbar>
     Home
     <button>
       <router-link to="/login">Users</router-link>
@@ -7,13 +8,14 @@
   </div>
 </template>
 <script>
+import Navbar from "../components/Navbar.vue";
 export default {
-  name: "Login",
+  components: { Navbar },
+  name: "Login"
 };
 </script>
 <style>
 .background-login {
-  padding-top: 80px;
   margin: 0;
   height: 100vh;
   width: 100%;
