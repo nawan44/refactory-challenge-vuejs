@@ -118,6 +118,11 @@ export default {
 }
 .router {
   text-decoration: none;
+  color: #fff !important;
+}
+.router:hover {
+  text-decoration: none;
+  color: #fff !important;
 }
 button:hover {
   color: #fff;

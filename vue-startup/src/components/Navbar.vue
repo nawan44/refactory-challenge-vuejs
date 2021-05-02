@@ -5,7 +5,7 @@
         ><h5>Cafe Bang Mul</h5>
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle class="toggle" target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="navbar-nav">
@@ -23,7 +23,11 @@
           <b-nav-item class="nav-admin" href="#"
             ><h6>Hello, Admin</h6></b-nav-item
           >
-          <b-nav-item class="nav-logout" href="#"><h6>Logout</h6></b-nav-item>
+          <b-nav-item class="nav-logout" href="#"
+            ><h6>
+              <router-link class="router-link" to="/login">Logout</router-link>
+            </h6></b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -46,13 +50,28 @@
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.toggle {
+  width: 40px;
+  padding: 0;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
+.router-link {
+  padding: 0;
+  margin: 0;
+  color: #38b6bb;
+  text-decoration: none;
+}
+.router-link:hover {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
 .nav-item ul li {
   display: inline;
   float: left;

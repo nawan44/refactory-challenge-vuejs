@@ -30,12 +30,29 @@
         <b-button href="#" class="button-cart">Add to cart</b-button>
       </b-card>
     </div>
+    <div class="container-card">
+      <b-card
+        img-src="https://wfxl.com/resources/media/5d8b73f3-d4a3-4e4c-adc1-e0b8ceb09de6-large16x9_coffeeMGNPIXABAY.PNG?1568247151162"
+        img-alt="Card image"
+        img-top
+      >
+        <b-card-title class="product-title">Americano</b-card-title>
+        <b-card-sub-title class="product-price">Rp 70.000</b-card-sub-title>
+        <b-card-text class="product-desc">
+          Kopi Hitam Legam
+        </b-card-text>
+
+        <b-button href="#" class="button-cart">Add to cart</b-button>
+      </b-card>
+    </div>
   </div>
 </template>
 <style scoped>
 .container-card {
   width: 300px;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   margin: 0 auto;
   text-align: center;
 }
