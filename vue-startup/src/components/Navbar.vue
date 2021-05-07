@@ -36,7 +36,7 @@
 <style>
 .navbar {
   background-color: #3c366b;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .navbar-brand h5 {
   height: 50px;
@@ -75,7 +75,7 @@ ul {
 .nav-item ul li {
   display: inline;
   float: left;
-  padding: 10;
+  padding: 10px;
   border: 1px solid;
   border-radius: 5px;
   margin: 10px 15px;

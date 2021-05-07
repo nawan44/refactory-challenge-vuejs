@@ -17,20 +17,21 @@
         </b-card>
       </div>
     </div>
-    <!-- <div class="frame2">AKu</div>
-
-    <button>
-      <router-link to="/login">Login</router-link>
-    </button> -->
+    <div class="frame2">
+      <empty-cart></empty-cart>
+      <cart></cart>
+    </div>
   </div>
 </template>
 <script>
 import Navbar from "../components/Navbar.vue";
-// import CardProduct from "../components/CardProduct.vue";
+// import EmptyCart from "../components/EmptyCart.vue";
+import Cart from "../components/Cart.vue";
+
 import axios from "axios";
 
 export default {
-  components: { Navbar },
+  components: { Navbar, Cart },
   name: "Home",
   data() {
     return {
@@ -38,7 +39,6 @@ export default {
       images: []
     };
   },
-
   mounted() {
     axios
       .get(
@@ -59,8 +59,8 @@ export default {
   padding: 0;
   margin: 0;
   height: 100%;
+  color: #fff;
   width: 100%;
-  color: red;
   background-color: #2c3e50;
 }
 .frame1 {
@@ -73,10 +73,10 @@ export default {
 }
 .frame2 {
   width: 30%;
+  height: 100vh;
   padding: 0;
   margin: 0;
   float: left;
-  color: red;
   background-color: #1a202c;
 }
 .footer-login {
