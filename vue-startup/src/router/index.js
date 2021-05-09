@@ -4,6 +4,7 @@ import Router from "vue-router";
 
 import Login from "@/pages/Login";
 import Home from "@/pages/Home";
+import Teh from "@/pages/Teh.vue";
 
 Vue.use(Router);
 
@@ -18,6 +19,11 @@ export default new Router({
       path: "/home",
       name: "Home",
       component: Home
+    },
+    {
+      path: "/teh",
+      name: "Teh",
+      component: Teh
     }
   ]
 });

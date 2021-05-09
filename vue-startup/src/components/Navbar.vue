@@ -12,7 +12,7 @@
           <b-nav-item class="nav-item" href="/home">
             <ul>
               <li><a href="/login">All</a></li>
-              <li><a href="#">Teh</a></li>
+              <li><a href="/teh">Teh</a></li>
               <li><a href="#">Kopi</a></li>
               <li><a href="#">Juice</a></li>
               <li><a href="#">Snack</a></li>
