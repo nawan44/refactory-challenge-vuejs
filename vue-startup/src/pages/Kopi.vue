@@ -42,7 +42,7 @@ export default {
   mounted() {
     axios
       .get(
-        "https://raw.githubusercontent.com/nawan44/raw-data-menu/main/menu_teh.json"
+        "https://raw.githubusercontent.com/nawan44/raw-data-menu/main/menu_kopi.json"
       )
       .then(response => {
         this.users = response.data;

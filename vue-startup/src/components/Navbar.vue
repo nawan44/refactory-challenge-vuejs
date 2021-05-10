@@ -13,7 +13,7 @@
             <ul>
               <li><a href="/login">All</a></li>
               <li><a href="/teh">Teh</a></li>
-              <li><a href="#">Kopi</a></li>
+              <li><a href="/kopi">Kopi</a></li>
               <li><a href="#">Juice</a></li>
               <li><a href="#">Snack</a></li>
             </ul>

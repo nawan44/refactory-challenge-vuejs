@@ -4,8 +4,8 @@ import Router from "vue-router";
 
 import Login from "@/pages/Login";
 import Home from "@/pages/Home";
-import Teh from "@/pages/Teh.vue";
-
+import Teh from "@/pages/Teh";
+import Kopi from "@/pages/Kopi";
 Vue.use(Router);
 
 export default new Router({
@@ -24,6 +24,11 @@ export default new Router({
       path: "/teh",
       name: "Teh",
       component: Teh
+    },
+    {
+      path: "/kopi",
+      name: "Kopi",
+      component: Kopi
     }
   ]
 });
