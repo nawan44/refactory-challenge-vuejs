@@ -32,7 +32,7 @@ import axios from "axios";
 
 export default {
   components: { Navbar, Cart },
-  name: "Home",
+  name: "Kopi",
   data() {
     return {
       users: [],
