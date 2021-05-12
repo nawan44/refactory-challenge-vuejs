@@ -1,5 +1,5 @@
 <template>
-  <div class="container-cart">
+  <div class="container-cart" id="page">
     <button class="button-checkout">Checkout</button>
     <div class="label-checkout">
       <div class="label-total-checkout">
@@ -11,22 +11,49 @@
     </div>
     <div class="label-product-checkout">Latte</div>
     <div class="label-rupiah">
-      <div class="label-harga-satuan">Rp 570.000</div>
+      <div class="label-harga-satuan" id="input1">570000</div>
       <div class="label-kali ">x</div>
-      <div class="label-volume">1</div>
-      <div class="label-harga-total">Rp 70.000</div>
+      <div class="label-volume" id="input2">
+        {{ count }}
+      </div>
+      <div class="label-harga-total">{{ result() }}</div>
     </div>
     <div class="container-actions">
       <button class="button-checkout-remove">Remove</button>
       <span>
-        <button class="button-checkout-plus">+</button>
-        <button class="button-checkout-minus">-</button>
+        <button class="button-checkout-plus" v-on:click.prevent="increment">
+          +
+        </button>
+        <button class="button-checkout-minus" v-on:click.prevent="decrement">
+          -
+        </button>
       </span>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data: () => {
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    },
+    decrement() {
+      if (this.count > 0) {
+        this.count--;
+      }
+    },
+    result: function() {
+      return 570000 * parseInt(this.count);
+    }
+  }
+};
+</script>
 <style>
 .container-cart {
   width: 90%;
