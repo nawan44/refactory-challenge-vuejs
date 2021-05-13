@@ -6,7 +6,7 @@
         Total
       </div>
       <div class="label-price-checkout">
-        Rp 35.000
+        {{ result() }}
       </div>
     </div>
     <div class="label-product-checkout">Latte</div>

@@ -8,9 +8,19 @@
           <b-card-title class="product-title">
             {{ user.menu_title }}
           </b-card-title>
-          <b-card-sub-title class="product-price">{{
+          <VuetifyMoney
+            v-model="user.menu_price"
+            v-bind:label="label2"
+            v-bind:readonly="readonly2"
+            v-bind:disabled="disabled2"
+            v-bind:outlined="outlined2"
+            v-bind:clearable="clearable2"
+            v-bind:options="options5"
+          />
+          <!-- {{ user.menu_price }} -->
+          <!-- <b-card-sub-title class="product-price">{{
             user.menu_price
-          }}</b-card-sub-title>
+          }}</b-card-sub-title> -->
           <b-card-text class="product-desc"> {{ user.menu_desc }} </b-card-text>
 
           <b-button href="#" class="button-cart">Add to cart</b-button>
@@ -27,17 +37,36 @@
 import Navbar from "../components/Navbar.vue";
 // import EmptyCart from "../components/EmptyCart.vue";
 import Cart from "../components/Cart.vue";
+import VuetifyMoney from "../components/vuetify-money";
 
 import axios from "axios";
 
 export default {
-  components: { Navbar, Cart },
+  components: { Navbar, Cart, VuetifyMoney },
   name: "Home",
   data() {
     return {
       users: [],
-      images: []
+      images: [],
+      label1: "Integer",
+      readonly1: false,
+      disabled1: false,
+      outlined1: true,
+      clearable1: false,
+      options1: {
+        locale: "pt-BR",
+        prefix: "",
+        suffix: "",
+        length: 9,
+        precision: 0
+      }
     };
+  },
+  currency() {
+    new Intl.NumberFormat("ja-JP", {
+      style: "currency",
+      currency: "JPY"
+    }).format(user.menu_price);
   },
   mounted() {
     axios

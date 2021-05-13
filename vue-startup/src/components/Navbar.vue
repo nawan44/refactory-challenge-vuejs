@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar class="navbar" toggleable="lg" type="dark">
-      <b-navbar-brand class="navbar-brand" href="#"
+      <b-navbar-brand class="navbar-brand" href="#/home"
         ><h5>Cafe Bang Mul</h5>
       </b-navbar-brand>
 

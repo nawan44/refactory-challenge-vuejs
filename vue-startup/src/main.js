@@ -7,6 +7,7 @@ import axios from "axios";
 // import VueAxios from "vue-axios";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import VueCurrencyInput from "vue-currency-input";
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import "bootstrap/dist/css/bootstrap.css";
@@ -20,6 +21,10 @@ Vue.use(IconsPlugin);
 Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
+
+// export default VuetifyMoney;
+
+// import vuetify from "@/plugins/vuetify-money.js";
 
 /* eslint-disable no-new */
 new Vue({
