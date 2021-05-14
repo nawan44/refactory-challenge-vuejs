@@ -15,7 +15,7 @@
               <li><a href="#/teh">Teh</a></li>
               <li><a href="#/kopi">Kopi</a></li>
               <li><a href="#">Juice</a></li>
-              <li><a href="#">Snack</a></li>
+              <li><a href="#/snack">Snack</a></li>
             </ul>
           </b-nav-item>
         </b-navbar-nav>

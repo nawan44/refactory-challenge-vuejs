@@ -6,6 +6,8 @@ import Login from "@/pages/Login";
 import Home from "@/pages/Home";
 import Teh from "@/pages/Teh";
 import Kopi from "@/pages/Kopi";
+import Snack from "@/pages/Snack";
+
 Vue.use(Router);
 
 export default new Router({
@@ -29,6 +31,11 @@ export default new Router({
       path: "/kopi",
       name: "Kopi",
       component: Kopi
+    },
+    {
+      path: "/snack",
+      name: "Snack",
+      component: Snack
     }
   ]
 });

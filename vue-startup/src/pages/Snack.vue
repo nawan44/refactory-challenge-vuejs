@@ -8,9 +8,6 @@
           <b-card-title class="product-title">
             {{ user.menu_title }}
           </b-card-title>
-          <!-- <v-currency-field v-model="user.menu_price" /> -->
-
-          <!-- {{ user.menu_price }} -->
           <b-card-sub-title class="product-price">{{
             user.menu_price
           }}</b-card-sub-title>
@@ -35,18 +32,17 @@ import axios from "axios";
 
 export default {
   components: { Navbar, Cart },
-  name: "Home",
+  name: "Kopi",
   data() {
     return {
       users: [],
       images: []
     };
   },
-
   mounted() {
     axios
       .get(
-        "https://raw.githubusercontent.com/nawan44/raw-data-menu/main/menu_all.json"
+        "https://raw.githubusercontent.com/nawan44/raw-data-menu/main/menu_snack.json"
       )
       .then(response => {
         this.users = response.data;

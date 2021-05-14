@@ -8,11 +8,14 @@ import axios from "axios";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import VueCurrencyInput from "vue-currency-input";
+import Vuetify from "vuetify";
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import "vuetify/dist/vuetify.min.css";
 
+Vue.use(Vuetify);
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
@@ -21,6 +24,7 @@ Vue.use(IconsPlugin);
 Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
+Vue.use(VueCurrencyInput);
 
 // export default VuetifyMoney;
 
@@ -29,6 +33,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: "#app",
+
   router,
   components: { App },
   template: "<App/>"
