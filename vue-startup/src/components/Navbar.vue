@@ -14,7 +14,7 @@
               <!-- <li><a href="/login">All</a></li> -->
               <li><a href="#/teh">Teh</a></li>
               <li><a href="#/kopi">Kopi</a></li>
-              <li><a href="#">Juice</a></li>
+              <li><a href="#jus">Juice</a></li>
               <li><a href="#/snack">Snack</a></li>
             </ul>
           </b-nav-item>

@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import Teh from "@/pages/Teh";
 import Kopi from "@/pages/Kopi";
 import Snack from "@/pages/Snack";
+import Jus from "@/pages/Jus";
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: "/snack",
       name: "Snack",
       component: Snack
+    },
+    {
+      path: "/jus",
+      name: "Jus",
+      component: Jus
     }
   ]
 });
