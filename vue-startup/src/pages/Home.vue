@@ -16,13 +16,15 @@
           }}</b-card-sub-title>
           <b-card-text class="product-desc"> {{ user.menu_desc }} </b-card-text>
 
-          <b-button href="#" class="button-cart">Add to cart</b-button>
+          <b-button href="#" class="button-cart" v-on:keyup="sendValue"
+            >Add to cart</b-button
+          >
         </b-card>
       </div>
     </div>
     <div class="frame2">
       <!-- <empty-cart></empty-cart> -->
-      <cart :msg="childData" />
+      <cart :event="events" />
     </div>
   </div>
 </template>
@@ -36,13 +38,20 @@ import axios from "axios";
 export default {
   components: { Navbar, Cart },
   name: "Home",
+  props: ["user"],
   data() {
     return {
       users: [],
-      images: []
+      images: [],
+      events: []
     };
   },
-
+  methods: {
+    sendValue: function(event) {
+      // this.user.menu_title = event.target.value;
+      this.events.value = user;
+    }
+  },
   mounted() {
     axios
       .get(

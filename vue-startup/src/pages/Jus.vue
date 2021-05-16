@@ -8,9 +8,9 @@
           <b-card-title class="product-title">
             {{ user.menu_title }}
           </b-card-title>
-          <b-card-sub-title class="product-price">{{
-            user.menu_price
-          }}</b-card-sub-title>
+          <b-card-sub-title class="product-price">
+            {{ user.menu_price }}
+          </b-card-sub-title>
           <b-card-text class="product-desc"> {{ user.menu_desc }} </b-card-text>
 
           <b-button href="#" class="button-cart">Add to cart</b-button>
@@ -27,7 +27,6 @@
 import Navbar from "../components/Navbar.vue";
 // import EmptyCart from "../components/EmptyCart.vue";
 import Cart from "../components/Cart.vue";
-
 import axios from "axios";
 
 export default {
